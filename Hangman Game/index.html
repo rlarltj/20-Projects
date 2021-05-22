@@ -28,16 +28,24 @@
             <!-- Legs-->
             <line x1="140" y1="150" x2="120" class="figure-part"  y2="180"></line>
             <line x1="140" y1="150" x2="160" class="figure-part"  y2="180"></line>
-
-        </svg>
-        
-    
+       </svg>
+    <div class="wrong-letter-container">
+        <div id="wrong-letter"></div>
     </div>
+    <div class="word" id="word"></div>
+</div>
+<!-- Container for final message-->
+<div class="popup-container" id="popup-container">
+    <div class="popup">
+        <h2 id="final-message"></h2>
+        <button class="play-button" id="play-button">Play Again</button>
+    </div>
+</div>
 
-
-
-
-
+<!--Notification-->
+<div class="notification-container" id="notification-container">
+    <p>You have already entered this letter</p>
+</div>
     <script src="script.js"></script>
 </body>
 </html>
