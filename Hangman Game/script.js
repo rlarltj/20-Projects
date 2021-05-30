@@ -12,6 +12,16 @@ let selectedWord = words[Math.floor(Math.random() * words.length)]
 const correctLetters = [];
 const wrongLetters = [];
 
+async function getRandomWords(){
+    const res = await fetch('https://random-word-api.herokuapp.com/word?number=50');
+    const data = await res.json();
+    data.forEach(word => {
+        words.push(word)
+    });
+}
+getRandomWords();
+
+
 // Show hidden word
 function displayWord(){
 wordEL.innerHTML = `
