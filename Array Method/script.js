@@ -19,10 +19,6 @@ async function getRandomUser(){
 
     addData(newUser);
 }
-getRandomUser(); 
-getRandomUser(); 
-getRandomUser(); 
-
 
 // Double everyones money
 function doubleMoney(){
@@ -44,8 +40,6 @@ function addData(value){
 
     updateDOM();
 }
-
-
 
 // Update DOM
 function updateDOM(providedData = data){
@@ -89,3 +83,7 @@ doubleBtn.addEventListener("click", doubleMoney);
 sortBtn.addEventListener("click", sortByRichest);
 showMB.addEventListener("click", showMillion)
 calculateBtn.addEventListener("click", calculateWealth)
+
+getRandomUser(); 
+getRandomUser(); 
+getRandomUser(); 
