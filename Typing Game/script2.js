@@ -51,6 +51,9 @@ async function addWordToDOM() {
     word.innerHTML = wordword;
 }
 
+
+addWordToDOM();
+
 // Update score
 function updateScore() {
   score++;
@@ -79,10 +82,6 @@ function gameOver() {
 
   endgameEl.style.display = 'flex';
 }
-
-addWordToDOM();
-
-// Event listeners
 
 // Typing
 text.addEventListener('input', e => {
