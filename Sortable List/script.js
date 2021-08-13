@@ -20,8 +20,6 @@ const listItems = [];
 
 let dragStartIndex;
 
-createList();
-
 // Insert list items into DOM
 function createList(){
     [...richestPeople]
@@ -49,6 +47,8 @@ function createList(){
 
         addEventListener();
 }
+
+createList();
 
 // Check the order of list items
 function checkOrder(){
