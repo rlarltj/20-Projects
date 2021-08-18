@@ -98,14 +98,6 @@ function dragDrop(){
     this.classList.remove('over');
 }
 
-function swapItems(from, to){
-    const itemOne = listItems[from].querySelector('.draggable');
-    const itemTwo = listItems[to].querySelector('.draggable');
-
-    listItems[from].appendChild(itemTwo);
-    listItems[to].appendChild(itemOne);
-}
-
 function dragEnter(){
     this.classList.add('over');
 }
@@ -113,6 +105,14 @@ function dragEnter(){
 function dragLeave(){
     this.classList.remove('over');
 
+}
+
+function swapItems(from, to){
+    const itemOne = listItems[from].querySelector('.draggable');
+    const itemTwo = listItems[to].querySelector('.draggable');
+
+    listItems[from].appendChild(itemTwo);
+    listItems[to].appendChild(itemOne);
 }
 
 check.addEventListener('click', checkOrder);
