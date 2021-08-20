@@ -81,15 +81,15 @@ function addEventListener(){
     })
 }
 
+function dragStart(){
+    dragStartIndex = +this.closest('li').getAttribute('data-index');
+    console.log(dragStartIndex);
+}
 
 function dragOver(e){
     e.preventDefault();
 }
 
-function dragStart(){
-    dragStartIndex = +this.closest('li').getAttribute('data-index');
-    console.log(dragStartIndex);
-}
 
 function dragDrop(){
     const dragEndIndex = +this.getAttribute('data-index');
