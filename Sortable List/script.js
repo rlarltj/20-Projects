@@ -1,5 +1,6 @@
 const draggable_list = document.getElementById('draggable-list');
 const check = document.getElementById('check');
+let dragStartIndex;
 
 const richestPeople = [
     'Elon Musk',
@@ -17,8 +18,6 @@ const richestPeople = [
 
 // Store list items
 const listItems = [];
-
-let dragStartIndex;
 
 // Insert list items into DOM
 function createList(){
