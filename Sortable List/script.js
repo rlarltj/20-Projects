@@ -89,6 +89,9 @@ function dragOver(e){
     e.preventDefault();
 }
 
+function dragEnter(){
+    this.classList.add('over');
+}
 
 function dragDrop(){
     const dragEndIndex = +this.getAttribute('data-index');
@@ -97,9 +100,6 @@ function dragDrop(){
     this.classList.remove('over');
 }
 
-function dragEnter(){
-    this.classList.add('over');
-}
 
 function dragLeave(){
     this.classList.remove('over');
