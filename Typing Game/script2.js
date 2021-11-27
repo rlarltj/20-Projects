@@ -91,6 +91,7 @@ text.addEventListener('input', e => {
     addWordToDOM();
     updateScore();
 
+    
     // Clear
     e.target.value = '';
 
@@ -99,7 +100,7 @@ text.addEventListener('input', e => {
     } else if (difficulty === 'medium') {
       time += 3;
     } else {
-      time += 5;
+      time += 6;
     }
 
     updateTime();
