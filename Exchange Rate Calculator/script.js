@@ -31,8 +31,6 @@ function calculate(){
 
         if(amountEL_one.value <0){
             alert('마이너스는 안돼용~')
-        }else if(amountEL_one.value =='3000'){
-            alert('i love you 3000')
         }else{amountEL_two.value = (amountEL_one.value *rates).toFixed(2);}
         
     });
