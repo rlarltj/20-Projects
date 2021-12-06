@@ -1,5 +1,5 @@
- const filter = document.getElementById('filter');
- const loading = document.querySelector('.loader');
+const loading = document.querySelector('.loader');
+const filter = document.getElementById('filter');
  const postContainer = document.getElementById('post-container');
 
  let limit = 5;
