@@ -70,6 +70,7 @@ window.addEventListener('scroll', () =>{
         showLoading();
     }
 })
+
 showPosts();
 
 filter.addEventListener('input', filterPosts);
