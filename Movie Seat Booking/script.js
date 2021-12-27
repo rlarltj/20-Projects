@@ -1,8 +1,8 @@
 const container = document.querySelector(".container");
-const seats = document.querySelectorAll('.row .seat:not(.occupied)');
 const count = document.getElementById("count");
 const total = document.getElementById("total");
 const movieSelect = document.getElementById("movie");
+const seats = document.querySelectorAll('.row .seat:not(.occupied)');
 let ticketPrice = +movieSelect.value;
 // +는 parseInt와 마찬가지로 string을 int로 변환한다.
 
@@ -52,7 +52,7 @@ container.addEventListener('click', (e) =>{
 //Get data from localstorage and populate UI 
 function populateUI(){
     const selectedSeats = JSON.parse(localStorage.getItem('selectedSeats'));
-    if(selectedSeats !== 'null' ){
+    if(selectedSeats !== 'null' && selectedSeats.length >0 ){
         seats.forEach((seat, index) =>{
             if(selectedSeats.indexOf(index)> -1){
                 seat.classList.add('selected');
