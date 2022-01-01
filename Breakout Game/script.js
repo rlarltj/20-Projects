@@ -181,8 +181,8 @@ function draw() {
 }
 // Update canvas drawing and animation
 function update() {
-  movePaddle();
   moveBall();
+  movePaddle(); //happy new year
   // Draw everything
   draw();
   requestAnimationFrame(update);
