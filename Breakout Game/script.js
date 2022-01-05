@@ -3,11 +3,19 @@ const closeBtn = document.getElementById('close-btn');
 const rules = document.getElementById('rules');
 const canvas = document.getElementById('canvas');
 const ctx = canvas.getContext('2d');
+const start = document.getElementById("start");
 let score = 0;
-
+let flag = false;
 const brickRowCount = 9;
 const brickColumnCount = 5;
 const delay = 500; //delay to reset the game
+
+start.addEventListener("click", ()=>{
+  flag = true;
+  console.log(123)
+  console.log(flag);
+})
+
 
 // Create ball props
 const ball = {
@@ -100,6 +108,7 @@ function movePaddle() {
 
 // Move ball on canvas
 function moveBall() {
+  if(flag){
   ball.x += ball.dx;
   ball.y += ball.dy;
   // Wall collision (right/left)
@@ -140,7 +149,7 @@ function moveBall() {
   if (ball.y + ball.size > canvas.height) {
     showAllBricks();
     score = 0;
-  }
+  }}
 }
 // Increase score
 function increaseScore() {
