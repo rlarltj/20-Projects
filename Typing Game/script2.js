@@ -7,9 +7,15 @@ const settingsBtn = document.getElementById('settings-btn');
 const settings = document.getElementById('settings');
 const settingsForm = document.getElementById('settings-form');
 const difficultySelect = document.getElementById('difficulty');
+const startBtn = document.getElementById('start');
+
+let start = false;
+
+startBtn.addEventListener('click',()=>{
+startBtn.style.display = 'none';
+
 
 // List of words for game
-
 async function getRandomWord(){
    const res= await fetch('https://random-word-api.herokuapp.com/word?number=50');
    const data = await res.json();
@@ -105,6 +111,7 @@ text.addEventListener('input', e => {
 
     updateTime();
   }
+  
 });
 
 // Settings btn click
@@ -115,3 +122,5 @@ settingsForm.addEventListener('change', e => {
   difficulty = e.target.value;
   localStorage.setItem('difficulty', difficulty);
 });
+
+})
