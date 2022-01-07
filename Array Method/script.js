@@ -37,7 +37,6 @@ function sortByRichest(){
 // Add new object to data arr
 function addData(value){
    data.push(value);
-
     updateDOM();
 }
 
