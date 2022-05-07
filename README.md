@@ -9,3 +9,4 @@ This is the main repository for all of the projects.
 | 03  |    [Custom Video Player](https://github.com/bradtraversy/vanillawebprojects/tree/master/custom-video-player)     | [Live Demo](https://rlarltj.github.io/20-Projects/Custom%20Video%20Player/index.html)  |
 | 04  |  [Exchange Rate Calculator](https://github.com/bradtraversy/vanillawebprojects/tree/master/exchange-rate)  | [Live Demo](https://vanillawebprojects.com/projects/exchange-rate/)  |
 | 05  | [DOM Array Methods Project](https://github.com/bradtraversy/vanillawebprojects/tree/master/dom-array-methods)  | [Live Demo](https://vanillawebprojects.com/projects/dom-array-methods/)  |
+| 06  |     [Hangman Game](https://github.com/rlarltj/20-Projects/tree/main/Hangman%20Game)  | [Live Demo](https://rlarltj.github.io/20-Projects/Hangman%20Game/index.html)  |
