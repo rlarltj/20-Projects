@@ -1,7 +1,7 @@
 
 # 20+ Web Projects With Vanilla JavaScript
-This is the main repository for all of the projects.
-It is a interesting sample of 5 out of 20 projects.
+# This is the main repository for all of the projects.
+# It is a interesting sample of 5 out of 20 projects.
 
 |  #  |            Project             | Live Demo |
 | :-: | :----------------------------: | :-------: |
