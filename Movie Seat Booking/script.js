@@ -10,6 +10,7 @@ populateUI();
 
 // Save selected movie index and price
 function setMovieData(movieIndex, moviePrice){
+
     localStorage.setItem('selectedMovieIndex', movieIndex);
     localStorage.setItem('selectedMoviePrice', moviePrice);
 }
@@ -17,6 +18,7 @@ function setMovieData(movieIndex, moviePrice){
 
 // Update total & count
 function updateSelectedCount(){
+
     const selectedSeats = document.querySelectorAll('.row .seat.selected')
     const selectedSeatsCount = selectedSeats.length
     count.innerText = selectedSeatsCount;
@@ -28,7 +30,7 @@ function updateSelectedCount(){
     const seatsIndex = [...selectedSeats].map((seat) => [...seats].indexOf(seat));
     localStorage.setItem('selectedSeats', JSON.stringify(seatsIndex));
     // map은 새로운 변수의 선언이 필요하며 foreach와 다르게 배열을 반환한다.
-    console.log(seatsIndex);
+
 
 }
 
@@ -51,7 +53,9 @@ container.addEventListener('click', (e) =>{
 
 //Get data from localstorage and populate UI 
 function populateUI(){
+    
     const selectedSeats = JSON.parse(localStorage.getItem('selectedSeats'));
+
     if(selectedSeats !== 'null' && selectedSeats.length >0 ){
         seats.forEach((seat, index) =>{
             if(selectedSeats.indexOf(index)> -1){
